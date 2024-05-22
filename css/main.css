@@ -96,30 +96,45 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.content-wrapper{
+.content-wrapper {
     outline: 3px dotted red;
-    width:90%;
-    
+    width: 90%;
+    margin: 50px 0;
+
 }
+
 /*--------------Base Header-Footer Styles--------*/
 
 header {
     display: flex;
     justify-content: center;
+    padding: 15px 0;
 }
-   
+
 
 header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
 }
 
-header nav ul{
+.header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+}
+
+header nav {
+    width: 60%;
+
+}
+
+header nav ul {
     display: flex;
     justify-content: space-around;
-
+    width: 100%;
 }
 
 
@@ -127,18 +142,32 @@ header nav ul{
 
 
 
-footer  {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;  
+}
+
+.footer .content-wrapper {
+    width: 55%;
+
+}
+
+footer .contact {
+    margin: 50 px;
+
 }
 
 footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 footer .social-icons p {
@@ -147,6 +176,9 @@ footer .social-icons p {
     align-items: center;
 }
 
+footer .copyright {
+    margin: 20px 0;
+}
 /*----------------Mobile Styles- Homepage--------*/
 
 /*---Hero Area--*/
@@ -158,7 +190,7 @@ footer .social-icons p {
 
 /*-------Aside area----*/
 
- section .aside {
+ aside {
     display: flex;
     justify-content: center;
 }
@@ -170,11 +202,24 @@ footer .social-icons p {
     justify-content: center;
 }
 
+.features h2 {
+    margin-bottom: 60px;
+}
+
+.features article {
+    width: 63%;
+    margin: 30px 0;
+}
+
 .features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: self-start;
-  flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.features p {
+  margin: 0;  
 }
 
 /*----Reviews----*/
@@ -182,6 +227,12 @@ footer .social-icons p {
 .reviews {
     display: flex;
     justify-content: center;
+}
+
+.reviews h2 {}
+
+.reviews h3 {
+    width: 55%;
 }
 
 /*=============================About Page=========*/
@@ -196,6 +247,10 @@ footer .social-icons p {
     justify-content: center;
 }
 
+.contact-content p {
+    margin: 0;  
+}
+
 /*========================FAQ Page=====================*/
 
 .faq {
@@ -208,8 +263,16 @@ footer .social-icons p {
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
+    margin: 50px 0 0 0;
 }
 
+.faq h2 {
+    margin: 40px;
+}
+
+.faq-content {
+    margin-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -241,7 +304,8 @@ footer .social-icons p {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -283,8 +347,10 @@ footer .social-icons p {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -302,9 +368,9 @@ footer .social-icons p {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -315,11 +381,13 @@ footer .social-icons p {
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important;
+        /* Black prints faster */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
@@ -351,6 +419,7 @@ footer .social-icons p {
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
