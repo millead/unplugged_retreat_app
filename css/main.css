@@ -96,13 +96,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/***********General Styles**********/
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: left;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    color: #e2e3ed;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+
+}
+
+
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0;
+    font-size: 1.125em;
+
+}
+
+p {
+    font-size: .875em;
+    line-height: 18px;
+}
+
+img {}
+
+figure {}
+
+address {
+    font-style: normal;
+}
+
+
 .content-wrapper {
 
     outline: 3px dotted red;
     width: 90%;
     padding: 50px 0;
-
-
 }
 
 /*--------------Base Header-Footer Styles--------*/
@@ -518,55 +567,55 @@ Faq Page
         padding: 15px 0;
     }
 
-        
-    }
 
-    /*******Hero Area********/
+}
 
-    .hero-area h1 {
-        width: 80%;
-    }
+/*******Hero Area********/
 
-    /********Aside********/
-    aside .content-wrapper {
-        justify-content: space-around;
-    }
+.hero-area h1 {
+    width: 80%;
+}
 
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-        width: 30%;
-    }
+/********Aside********/
+aside .content-wrapper {
+    justify-content: space-around;
+}
 
-    /************Features********/
-    .features h2 {
-        width: 90%;
-    }
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+    width: 30%;
+}
 
-    .features article {
-        flex-basis: 33% ;
-    }
+/************Features********/
+.features h2 {
+    width: 90%;
+}
+
+.features article {
+    flex-basis: 33%;
+}
 
 
-    /* Reviews */
-    .reviews article div {
-        width: 42%;
-    }
+/* Reviews */
+.reviews article div {
+    width: 42%;
+}
 
-    /* ==========================================================================
+/* ==========================================================================
 About Page
 ======================================================== */
-    
-    .mission h2,
-    .contact-section .content-wrapper h2 {
-        width:95%;
-    }
 
-    /* ==========================================================================
+.mission h2,
+.contact-section .content-wrapper h2 {
+    width: 95%;
+}
+
+/* ==========================================================================
 FAQ Page
 ========================================================================== */
-    .faq h2 {
-        width: 100%;
-    }
+.faq h2 {
+    width: 100%;
+}
 
 
 
