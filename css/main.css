@@ -253,7 +253,7 @@
   /* Hero Area */
   
     .hero-area {
-        background: url('../img/unplugged-retreat.jpg');
+        background-image: url("../img/unplugged-retreat.jpg");
         background-size: cover;
         background-position: center;
         min-height: 500px;
@@ -305,7 +305,7 @@
   /* Features */
   
   .features {
-    background: url('../img/unplugged-retreat-features.jpg');
+    background-image: url("../img/unplugged-retreat-features.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
