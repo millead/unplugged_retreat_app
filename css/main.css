@@ -241,7 +241,8 @@
   }
   
   footer .social-icons p i {
-    font-size: 1.3125em;
+    font-size:1.3125em; 
+    color: white;
   }
   
   footer .copyright {
